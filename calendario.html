@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SAR</title>
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+
+    <h1>SAR - Sistema de Agendamento de Reunião</h1>
+    <p>Aqui vai ser os textos onde agenda</p>
+    <main class="card">
+        <section class="card__header">
+            <h3>Quinta-Feira</h3>
+            <h3>Novembro</h3>
+        </section>
+        <section class="card__body">
+            <ul class="card__body--days">
+                <li>Dom</li>
+                <li>Seg</li>
+                <li>Ter</li>
+                <li>Qua</li>
+                <li>Qui</li>
+                <li>Sex</li>
+                <li>Sab</li>
+            </ul>
+            <ul class="card__body--dates">
+                <li class="prev">30</li>
+                <li class="prev">31</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li class="circle orange">16 <span>5</span></li>
+                <li class="active">17</li>
+                <li>18</li>
+                <li class="circle purple">19 <span>6</span></li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li class="next">1</li>
+                <li class="next">2</li>
+            </ul>
+        </section>
+        <div class="card__footer">
+            <p>
+                <py-script>
+                    from datetime import datetime
+                    now = datetime.now()
+                    print(now.strftime("%H:%M"))
+                </py-script>
+            </p>
+            <a href="#" class="add">+</a>
+            <p>12<sup>o</sup> C</p>
+        </div>
+    </main>
+</body>
+
+</html>
