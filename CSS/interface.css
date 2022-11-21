@@ -1,0 +1,27 @@
+#Cabecalho {
+    /* Fundo do cabeçalho */
+    background-color: #1F4C66;
+
+}
+
+#Titulo {
+    font-family: 'Courier New';
+    font-size: 70pt;
+    color: goldenrod;
+    text-shadow: 5px 5px 5px black;
+    display: inline;
+    margin-left: 10px;
+    /* Borda */
+    border: 7px solid goldenrod;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+
+
+#Subtitulo {
+    color: goldenrod;
+    text-shadow: 2px 2px 2px black;
+    display: inline;
+    margin-left: 5px;
+}
